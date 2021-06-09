@@ -145,7 +145,7 @@ func isIpv4(ip net.IP) bool {
 // filterInterface removes interface that's not up or is a loopback/p2p
 func filterInterface(interfaces []net.Interface) (i []net.Interface) {
 	for _, v := range interfaces {
-		if (v.Flags&net.FlagUp != 0) && (v.Flags&net.FlagLoopback == 0) && (v.Flags&net.FlagPointToPoint == 0) {
+		if (v.Flags&net.FlagUp != 0) && (v.Flags&net.FlagLoopback == 0) {
 			i = append(i, v)
 		}
 	}

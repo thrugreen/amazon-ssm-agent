@@ -1,4 +1,4 @@
-Latest
+3.0.0.0
 ===============
 - Fixed issue where registration file is not removed when registration is cleared
 - Removed unnecessary CloudWatch Log api calls
